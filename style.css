@@ -3,74 +3,131 @@
     padding:0;
     box-sizing: border-box;
 }
-/* Primeira oágina do projeto*/
 
-.container{
+/* Homepage*/
+
+.container-box{
     width: 100%;
     height: 100vh;
-    background-color: gray;
+    background-color: black;
 }
 
 .container-header{
     display: grid;
-    grid-template-columns:40% 40% 20%;
+    grid-template-columns:35% 40% 25%;
+   
+}
+
+section img{
+    border-right: 1rem solid rgb(59, 59, 59);
+    margin-top: 5rem;
+    
 }
 
 #name{
     position: absolute;
-    margin:30rem auto;
-    padding-left: 8rem;
-    color: black;
+    bottom: 10rem;
+    color: white;
+    left: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
   
 }
 
 #description{
     color:white;
-    margin: auto;
-    text-align: center;
-    font-size: 1.3rem;
+    grid-column: 1 / span 3;
+    padding: 1rem;
     
 }
 
 #description>p{
-    margin:15rem auto;
+    position: relative;
+    font-size: 1.2rem;
+    text-align: center;
+    bottom: 20rem;
     
 }
 
-img{
-    border-right: 2rem solid black;
-    
+.fa-brands{
+    font-size: 2.5rem;
+    color:white;
+    margin-top:1rem;
+    margin-left: 8rem;
 }
-.icons{
-    width: 50px;
-    margin-left: 13rem;
     
+#icons-position{
+    position: absolute;
     
-}
-
-.icons-position{
-    
-    display: flex; 
-    
-
 }
 
 .nav{
     
-    margin: auto;
+    margin: 12rem auto;
     grid-column: 3/4;
+    grid-row: 1/2;
     
 }
 
+ul{
+   margin-right: 5rem;
+}
+
 li{
-    padding-bottom: 5.5rem;
-    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    font-size: 1.1rem;
+
+}
+
+.submenu-item{
+    position: relative;
 
 }
 
 
-.container-main{
+.submenu-link{
+    text-decoration: none;
+}
+
+.submenu-link:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.sub-menu{
+    list-style: none;
+    padding: 0;
+    position: absolute;
+
+}
+
+
+
+/*Curriculo */
+
+.container-box2{
     width: 100%;
     height: 100vh;
-    background-color: pink;
+   
 }
+
+.kommunikation, .teamwork,
+.resilienz, .lernwillig,
+.garten, .volleyboll, .lesen{
+    background-color: rgba(255, 255, 255, 0.664);
+    width: 15rem;
+    height: 1rem;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+#hobbies{
+    margin-top: 8rem;
+}
+
+ 
+.carousel-inner{
+    background-color: black;
+    height: 100vh;
+} 
+
