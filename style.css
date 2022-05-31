@@ -21,7 +21,7 @@ a:link, a:visited, a:active{
 }
 
 
-/* Homepage-Mobile*/
+/* Primeira Pagina*/
 
 
 .container-box{
@@ -103,7 +103,7 @@ li{
     padding-bottom: 3.5rem;
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 350px){
 
     .foto-perfil{
         display: none;
@@ -126,11 +126,22 @@ li{
         grid-column: 1 / 2;
     }
 
+    .fa-brands{
+        font-size: 2rem;
+        margin-left: 1rem;
+        
+    }
+
+    #description{
+       
+        padding-bottom:15rem ;
+    }
+        
   
 
 }
 
-@media screen and (min-width: 350px){
+@media screen and (min-width: 351px){
 
     .foto-perfil{
         width: 100%;
@@ -147,6 +158,11 @@ li{
         
   
       }
+
+      #description{
+      
+        padding-bottom:6rem ;
+    }
   
 
 }
@@ -262,59 +278,102 @@ li{
 }
 
 #hobbies{
-    margin-top: 1rem;
+
     display: flex;
     justify-content: space-around;
+    margin: auto 5rem;
 
 }
 
 #hobbies img{
-    width: 150px;
+    width: 120px;
     transition: all 1s;
-    margin-left: .5rem;
+    margin-left: 5rem;
 }
 
 #hobbies img:hover {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
  
 
 }
 
 
 #hobbies p{
-    background-color: rgba(128, 128, 128, 0.4);
+    
     text-align: center;
     font-weight: bold;
     color:green;
   
 }
 
-.yoga{
-    display: none;
-}
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
+
+    #hobbies{
+        grid-template-rows:20% 20% 20% 20% ;
+        grid-template-columns: 100%;
+    }
     .sub-title{
     
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding-top: 1rem;
 
-    }
-
-    .yoga{
-        display: block;
     }
 
     .kommunikation, .teamwork,
     .resilienz, .lernwillig{
     
-    width: 35%;
+        width: 35%;
+
+    }
+        .yoga{
+         display: none;
+    }
+
+        #hobbies img{
+        width: 150px;
+        transition: all 1s;
+        margin-left: 5rem;
+    }
+
+        #hobbies img:hover {
+         width: 120px;
+        height: 120px;
+ 
+
+    }
+
+        #hobbies img{
+            margin-bottom:2rem;
+        }
+
+
 
 }
 
+@media screen and (max-width: 500px){
 
+    #hobbies{
+        display: grid;
+        justify-content: center;
+    }
+
+    .yoga{
+        display: none;
+    }
+
+
+    #hobbies img{
+        width: 100px;
+
+    }
+
+    .garten, .volleybol, .lesen{
+        margin-bottom: 10rem;
+
+    }
 }
 
 /* slide 2*/
@@ -352,16 +411,18 @@ li span:before{
     font-style: italic;
 }
 
-@media screen and (min-width: 768px){
+
+@media screen and (max-width: 768px){
     .berufe{
         margin:auto 6rem;
         
     }
-
+    
     .berufe ul li{
         padding:0;
-
+        
     }
+   
 }
 
 
@@ -370,10 +431,11 @@ li span:before{
 .education{
   display: flex;
   justify-content: space-around;
+  margin:auto 5rem;
+  padding: 0;
 }
 
 .education img {
-    width: 150px;
     transition: all 1s;
     margin-left: .5rem;
 }
@@ -384,27 +446,22 @@ li span:before{
  
 }
 
-.dci img{
+.dci div img{
     width: 150px;
     transition: all 1s;
-    margin-left: .5rem;
+    margin-left: 5.5rem;
+
 }
 
-.dci img:hover {
+.dci div img:hover{
     width: 200px;
     height: 200px;
- 
-
 }
-
 
 
 .education img{
     width: 200px;
-    height: 150px;
-    padding: 0;
-    margin-left: 2rem;
-    
+    height: 150px; 
 }
 
 
@@ -415,7 +472,7 @@ li span:before{
 }
 
 .dci{
-    margin-top: 2rem;
+  
     margin-left: 4rem;
     display: inline-block;
     padding: 0;
@@ -423,10 +480,12 @@ li span:before{
 
 .dci-position{
     position: absolute;
-    bottom: 10px;
-    left: 17rem;
+    left: 20rem;
+    bottom:.1rem;
     
 }
+
+
 
 .dci-position ul li{
 
@@ -483,12 +542,13 @@ li span:before{
 
 .container-box3{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: black;
     border-top: .5rem solid gray;
     display: grid;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
+    
 }
 
 legend{
@@ -516,19 +576,14 @@ textarea {
 
 
 
-section> div {
-    display: inline-block;
-}
-
-
 .button{
     background-color:rgb(9, 9, 88);;
     color:white;
     padding:10px;
-    border: 1px olid #00bc00;
     border-radius: 7.5px;
     margin-top: 10px;
     width: 100%;
+    
     
 }
 
@@ -548,4 +603,14 @@ footer div{
 footer div p{
     color:white;
     text-align: center;
+}
+
+footer div span::before{
+    
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0e0";
+    font-size: 1rem;
+
+ 
 }
