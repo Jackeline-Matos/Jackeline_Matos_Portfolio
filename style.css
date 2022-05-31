@@ -11,9 +11,7 @@ h1, h2, h3, h4, h5{
    
 }
 
-p{
-    font-size: 1.0rem;
-}
+
 /* Homepage-Mobile*/
 
 
@@ -233,6 +231,7 @@ li{
 .berufe{
     color: gray;
     margin:0 1.5rem;
+ 
   
 }
 
@@ -262,54 +261,167 @@ li span:before{
     font-style: italic;
 }
 
+
+
 /*Terceiro slide */
 
 .education{
-    display: flex;
-    margin:3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.education img {
+    width: 150px;
+    transition: all 1s;
+    margin-left: .5rem;
+}
+
+.education img:hover {
+    width: 200px;
+    height: 200px;
+ 
+
+}
+
+.dci img{
+    width: 150px;
+    transition: all 1s;
+    margin-left: .5rem;
+}
+
+.dci img:hover {
+    width: 200px;
+    height: 200px;
+ 
+
 }
 
 
 
+@media screen and (max-width: 600px){
 
-/*Projekt*/
+ .education img{
+    width: 100px;
+    height: 100px;
+    padding-left: 2rem;
+    margin-top: 2rem;
+ }
 
-.container-box3{
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
+ .school{
+    display: none;
+    grid-column: 1/2;
+ }
+
+ .education ul li{
+     padding:0
+
+ }
+
 }
 
 
-.container-box4{
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
+.education img{
+    width: 170px;
+    height: 150px;
+    padding: 0;
+    margin-left: 2rem;
+    
+}
+
+
+.education ul li{
+    margin-left: 2rem;
+    padding: 0;
    
 }
 
-.numero1{
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: red;
+.dci{
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: inline-block;
+    padding: 0;
 }
 
-.numero1:hover{
+.dci-position{
+    position: absolute;
+    bottom: 10px;
+    left: 17rem;
+}
+
+.dci-position ul li{
+
+    padding: 0;
+}
+
+
+
+/*Kontakt*/
+
+.container-box3{
     width: 100%;
-    color: white;
+    height: 90vh;
+    background-color: black;
+    border-top: .5rem solid gray;
+    display: grid;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+legend{
+    color:rgb(9, 9, 88);
+    font-weight: bold;
+}
+.personal-data label{
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+  color:gray;
+}
+
+.personal-data input {
+  width: 100%;
 
 }
 
-.numero2{
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: red;
+textarea {
+  width: 100%;
+  resize: vertical;
+  line-height: 1.8;
 }
 
-.numero2:hover{
+
+
+section> div {
+    display: inline-block;
+}
+
+
+.button{
+    background-color:rgb(9, 9, 88);;
+    color:white;
+    padding:10px;
+    border: 1px olid #00bc00;
+    border-radius: 7.5px;
+    margin-top: 10px;
     width: 100%;
-    color: white;
+    
+}
 
+.option select{
+    width: 100%;
+}
+
+footer div{
+    background-color: rgb(9, 9, 88);
+    height: 3rem;
+    padding-top: .5rem;
+ 
+    
+
+}
+
+footer div p{
+    color:white;
+    text-align: center;
 }
