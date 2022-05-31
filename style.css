@@ -11,6 +11,15 @@ h1, h2, h3, h4, h5{
    
 }
 
+ul li{
+    list-style: none;
+}
+a:link, a:visited, a:active{
+	text-decoration:none;
+	font-size:20px;
+	color:white;
+}
+
 
 /* Homepage-Mobile*/
 
@@ -44,16 +53,8 @@ h1, h2, h3, h4, h5{
     
 }
 
-@media screen and (max-width: 500px){
 
-    .foto-perfil{
-        width: 100%;
-        height: 50vh;
-        background-color: blueviolet;
 
-    }
-
-}
 #name{
     color: white;
     font-size: 1.6rem;
@@ -70,22 +71,12 @@ h1, h2, h3, h4, h5{
     padding-bottom:1.5rem ;
 }
 
-@media screen and (max-width: 500px){
-
-    #description{
-      
-        padding-bottom: 4rem;
-
-    }
-
-}
 
 .fa-brands{
     font-size: 3rem;
     color:white;
     margin-top:1.5rem;
     margin-left: 4rem;
-    /* alterar o tamanho da margem para 8rem */
 }
     
 
@@ -93,14 +84,12 @@ h1, h2, h3, h4, h5{
     grid-column: 3/4;
     grid-row: 2/3;
     margin-right: 1rem;
-    /* place-items: center; */
 }
 
 #icons-position{
 
     grid-column: 1 / 4;
     padding-bottom: 2rem;
-    /* p. bottom 5rem */
     place-items: center;
 }
 
@@ -113,6 +102,85 @@ ul{
 li{
     padding-bottom: 3.5rem;
 }
+
+@media screen and (max-width: 300px){
+
+    .foto-perfil{
+        display: none;
+
+    }
+
+    .nav{
+        grid-column: 1/2;
+       
+    }
+
+    nav ul li{
+        display: inline-block;
+        padding: 0;
+        background-color: blueviolet;
+        
+    }
+
+    #icons-position{
+        grid-column: 1 / 2;
+    }
+
+  
+
+}
+
+@media screen and (min-width: 350px){
+
+    .foto-perfil{
+        width: 100%;
+        height: 50vh;
+        background-color: blueviolet;
+        font-size: .5;
+
+    }
+
+    .fa-brands{
+      
+        margin-left: 2rem;
+        font-size: 2rem;
+        
+  
+      }
+  
+
+}
+
+
+@media screen and (min-width: 768px){
+
+    .fa-brands{
+      
+      margin-left: 8rem;
+      font-size: 3rem;
+
+    }
+
+    #description{
+      
+        
+        width: 50%;
+        font-size: 1rem;
+        bottom:5rem;
+
+    }
+
+    .foto-perfil{
+        width: 400px;
+        height: 80vh;
+        background-color: blueviolet;
+
+    }
+
+}
+   
+
+
 
 
 /*Curriculo mobile slide1*/
@@ -194,7 +262,7 @@ li{
 }
 
 #hobbies{
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around;
 
@@ -224,6 +292,29 @@ li{
 
 .yoga{
     display: none;
+}
+
+@media screen and (min-width: 768px){
+
+    .sub-title{
+    
+      font-size: 1.5rem;
+      padding-top: 1rem;
+
+    }
+
+    .yoga{
+        display: block;
+    }
+
+    .kommunikation, .teamwork,
+    .resilienz, .lernwillig{
+    
+    width: 35%;
+
+}
+
+
 }
 
 /* slide 2*/
