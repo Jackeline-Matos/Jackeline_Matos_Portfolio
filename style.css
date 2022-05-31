@@ -352,6 +352,17 @@ li span:before{
     font-style: italic;
 }
 
+@media screen and (min-width: 768px){
+    .berufe{
+        margin:auto 6rem;
+        
+    }
+
+    .berufe ul li{
+        padding:0;
+
+    }
+}
 
 
 /*Terceiro slide */
@@ -371,7 +382,6 @@ li span:before{
     width: 200px;
     height: 200px;
  
-
 }
 
 .dci img{
@@ -389,30 +399,8 @@ li span:before{
 
 
 
-@media screen and (max-width: 600px){
-
- .education img{
-    width: 100px;
-    height: 100px;
-    padding-left: 2rem;
-    margin-top: 2rem;
- }
-
- .school{
-    display: none;
-    grid-column: 1/2;
- }
-
- .education ul li{
-     padding:0
-
- }
-
-}
-
-
 .education img{
-    width: 170px;
+    width: 200px;
     height: 150px;
     padding: 0;
     margin-left: 2rem;
@@ -437,12 +425,57 @@ li span:before{
     position: absolute;
     bottom: 10px;
     left: 17rem;
+    
 }
 
 .dci-position ul li{
 
     padding: 0;
 }
+
+@media screen and (max-width: 550px){
+
+    .education{
+        padding-top: 50px;
+      }
+      
+    .dci-position{
+        bottom: 0;
+    }  
+ 
+    .dci img{
+        width: 200px;
+    }
+   
+    .school{
+       display: none;
+       grid-column: 1/2;
+    }
+   
+    .education ul li{
+        padding:0
+   
+    }
+   
+   }
+
+   @media screen and (min-width: 768px){
+
+    .education{
+        padding-top: 50px;
+      }
+      
+    .school{
+       display: block;
+      
+    }
+   
+    .education ul li{
+        padding:0
+   
+    }
+   
+   }
 
 
 
