@@ -1,6 +1,6 @@
 # Jackeline_Matos_Portfolio
 
-## Abschlussprojekt der UI - Basic modul
+## Abschlussprojekt - Modul HTML und CSS 
 
 ![alt text](/Fotos/Design.png)
 
