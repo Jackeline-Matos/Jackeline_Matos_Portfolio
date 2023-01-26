@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  #hobbies {
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-columns: 100%;
+  }
+  .sub-title {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .kommunikation,
+  .teamwork,
+  .resilienz,
+  .lernwillig {
+    width: 20%;
+  }
+  .yoga {
+    display: none;
+  }
+
+  #hobbies img {
+    width: 160px;
+    transition: all 1s;
+    margin-left: 5rem;
+  }
+
+  #hobbies img:hover {
+    width: 120px;
+    height: 120px;
+  }
+
+  #hobbies img {
+    margin-bottom: 2rem;
+  }
+}
+
+/* CV mobile slide 3*/
+@media screen and (max-width: 768px) {
+}
