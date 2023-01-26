@@ -1,15 +1,14 @@
 # Jackeline_Matos_Portfolio
 
-## Abschlussprojekt - Modul HTML und CSS 
+## Abschlussprojekt - Modul HTML und CSS
 
-![alt text](/Fotos/Design.png)
+![alt text](/Fotos/fullPage.png)
 
+### Tools
 
-### Programmierung sprache
+- HTML
+- CSS
 
-   * HTML
-   * CSS
-  
 ### Framework
 
-   * Bootstrap
+- Bootstrap
